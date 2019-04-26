@@ -4,64 +4,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Melinda West | Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div class="container">
 
-    <!--Top nav-->
-    <nav>
-      <img src="images/logo.png" alt="logo">
-      <ul>
-        <li>Work</li>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+      <!--Hero-->
+      <header>
+        <!--Top nav-->
+        <nav class="topnav">
+          <img src="images/logo-white.png" class="logo" alt="logo">
+          <img src="images/hamburger.png" class="hamburger" alt="menu">
+          <!-- desktop only <ul>
+            <li>Work</li>
+            <li>About</li>
+            <li>Resume</li>
+            <li>Contact</li>
+          </ul> desktop only-->
+        </nav>
+        <h2 class="hero">Hi! My name is Melinda West.</h2>
+          <p class="hero">I’m your friendly neighborhood <span>UX Designer</span> (if your neighborhood is Colorado). My passion is improving people’s lives by streamlining their interactions with technology.</p>
+      </header>
 
-    <!--Hero-->
-    <header>
-      <h2>Hi! My name is Melinda West.</h2>
-        <p>I’m your friendly neighborhood UX Designer (if your neighborhood is Colorado). My passion is improving people’s lives by streamlining their interactions with technology.</p>
-    </header>
+      <!--Case Study 1-->
+      <section class="projects gray">
+        <img src="images/kanga-mockup.svg" class="svg" alt="mockup">
+        <h1>Troop</h1>
+        <h4>Research • Problem solving • Branding • Design</h4>
+        <h3>Standing out in the cloud storage market through simplicity, strong security, and seamless file formatting</h3>
+        <button onclick="window.location.href='project.html'">View Case Study</button>
+      </section>
 
-    <!--Case Study 1-->
-    <section>
-      <h1>Troop</h1>
-      <h3>Standing out in the cloud storage market</h3>
-      <h4>Research | Problem solving | Branding | Design</h4>
-      <button onclick="window.location.href='project.html'">View Case Study</button>
-      <img src="images/kanga-mockup.png" alt="mockup">
-    </section>
+      <!--Case Study 2-->
+      <section class="projects blue">
+        <img src="images/empty-mockup.svg" class="svg" alt="mockup">
+        <h1>[Solo Project]</h1>
+        <h4>Research • Problem solving • Branding • Design</h4>
+        <h3>[Whatever the solo project does Whatever the solo project does Whatever the solo project does]</h3>
+        <button>View Case Study</button>
+      </section>
 
-    <!--Case Study 2-->
-    <section>
-      <h1>[Solo Project]</h1>
-      <h3>[Whatever the solo project does]</h3>
-      <h4>Research | Problem solving | Branding | Design</h4>
-      <button>View Case Study</button>
-      <img src="images/empty-mockup.png" alt="mockup">
-    </section>
+      <!--Contact-->
+      <section class="contact">
+        <h5>Want to chat? Say hello:</h5>
+        <img src="images/email.png" alt="email icon" class="icon">
+        <img src="images/linkedin.png" alt="linkedin icon" class="icon">
+        <img src="images/github.png" alt="github icon" class="icon">
+      </section>
 
-    <!--Contact-->
-    <section class="contact">
-      <h3>Want to chat? Say hello:</h3>
-      <img src="images/email.png" alt="email icon">
-      <img src="images/linkedin.png" alt="linkedin icon">
-      <img src="images/github.png" alt="github icon">
-    </section>
+      <!--Footer / bottom nav-->
+      <footer>
+        <h6>Designed and developed by Melinda West</h6>
+        <nav>
+          <!-- desktop only <ul>
+            <li>Work</li>
+            <li>About</li>
+            <li>Resume</li>
+            <li>Contact</li>
+          </ul> desktop only-->
+        </nav>
+      </footer>
 
-    <!--Footer / bottom nav-->
-    <footer>
-      <h5>Designed and developed by Melinda West</h5>
-      <nav>
-        <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Resume</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </footer>
-
+    </div>
   </body>
 </html>

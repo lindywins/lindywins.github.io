@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+}
+
+/*master container grid*/
+.container {
+  background-color: #f6f6f6;
+  overflow: scroll;
+  width: 100%;
+}
+
+/* for next checkpoint
+@media (min-width: 400px) {
+  .container {
+
+  }
+} */
+
+header {
+  background-color: #B1C9C9;
+  height: 51.2rem;
+  margin-bottom: 1.6rem;
+}
+
+header.case {
+  background-color: #ffffff;
+  height: 44rem;
+  padding: 0 2rem;
+  margin-bottom: 0;
+}
+
+.logo {
+  padding-top: 4.1rem;
+}
+
+.hero {
+  padding-left: 3.9rem;
+  padding-right: 3.8rem;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  padding-left: 30.6rem;
+  padding-right: 2rem;
+}
+
+/* bolded text */
+span {
+  font-weight: bold;
+}
+
+/* all sections */
+section {
+  margin-top: 1.6rem;
+}
+
+section.teal {
+  background-color: #DCEBEB;
+}
+
+section.light-gray {
+  background-color: #EFEFEF;
+}
+
+section.light-blue {
+  background-color: #DDECF5;
+}
+
+section.beige {
+  background-color: #E8DAD3;
+}
+
+section.tan {
+  background-color: #DED0C9;
+}
+
+/* all case studies */
+.projects {
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* featured case study */
+.gray {
+  background-color: #DADADA;
+}
+
+/* 2nd case study */
+.blue {
+  background-color: #B3CBDB;
+}
+
+/* top and bottom nav */
+nav {
+  /*background: #638EA4; desktop only*/
+  color: #f6f6f6;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  width: 40%;
+}
+
+/* case study titles */
+h1 {
+  color: #4B8C96;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 7.5rem;
+  padding-left: 4.9rem;
+}
+
+/* project title */
+h1.case {
+  font-weight: 300;
+  font-size: 4.8rem;
+  line-height: 10.1rem;
+  padding-left: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/* hero primary */
+h2 {
+  color: #275B6F;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10.4rem;
+  padding-bottom: 1.6rem;
+  padding-right: 3.9rem;
+}
+
+/* project main headings */
+h2.case {
+  color: #4B8C96;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-left: 4rem;
+  padding-top: 4rem;
+}
+
+/* case study subheadings */
+h3 {
+  color: #000000;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-left: 4.9rem;
+  padding-right: 4.8rem;
+}
+
+/* project subheadings */
+h3.case {
+  color: #275B6F;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2.2rem;
+}
+
+/* case study roles */
+h4 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: normal;
+  padding-left: 4.9rem;
+  padding-right: 4.9rem;
+  padding-bottom: 1.8rem;
+}
+
+/* want to chat */
+h5 {
+  font-size: 2rem;
+  margin-bottom: 1.9rem;
+}
+
+/* designed by */
+h6 {
+  color: #000000;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+/* hero secondary */
+p {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+/* project body text */
+p.case {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  margin: auto 4rem;
+}
+
+p.bold-italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* lists */
+ul {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  list-style-type: square;
+  list-style-position: outside;
+  margin: 0.5rem 4rem 0.5rem 6rem;
+}
+
+/* items at bottom of a section */
+.bottom {
+  padding-bottom: 5rem;
+}
+
+/* items needing smaller bottom padding */
+.mini-bottom {
+  padding-bottom: 2rem;
+}
+
+.bottom-special {
+  margin-bottom: 5rem;
+}
+
+/* items at top of a section */
+.top {
+  padding-top: 5rem;
+}
+
+/* items needing smaller top padding */
+.mini-top {
+  padding-top: 2rem;
+}
+
+/* item that needs to be centered */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  background-color: #C5D5E0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 90%;
+}
+
+button {
+  background: #275B6F;
+  border-radius: 2.6rem;
+  color: #f6f6f6;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 3.1rem;
+  margin-left: 4.9rem;
+  margin-top: 1.6rem;
+  padding: 0.1rem 2rem;
+  text-align: center;
+}
+
+button.case {
+  margin-left: 4rem;
+}
+
+button.case2 {
+  margin-left: 2.8rem;
+}
+
+button.centered {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto 0 auto;
+}
+
+/* bottom margins for buttons */
+button.bott {
+  margin-bottom: 5rem;
+}
+
+/* my contact info */
+.contact {
+  background-color: #CABCB5;
+  height: 14.4rem;
+  margin-top: 1.6rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  text-align: center;
+}
+
+/* social media icons*/
+.icon {
+  margin: 1.1rem;
+}
+
+/* mockup images */
+.svg {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.stretch {
+  object-fit: cover;
+}
+
+.shrink {
+  max-width: 85%;
+}
+
+/* ? image */
+.research {
+  align-content: center;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+/* quote graphics */
+.quotes {
+  display: inline-block;
+  margin-left: 6rem;
+}
+
+p.inline {
+  display: inline-block;
+  margin-left: 9.7rem;
+  margin-right: 6rem;
+}
+
+img.inline {
+  display: inline-block;
+  justify-content: space-between;
+  max-width: 24%;
+}
+
+img.indent {
+  margin-left: 2rem;
+}
+
+img.arrow {
+  display: inline-block;
+  justify-content: space-between;
+  max-width: 7%;
+}
+
+footer {
+  background-color: #BBD3D3;
+  height: 6.4rem;
+  margin-top: 1.6rem;
+  padding: 2.25rem;
+  text-align: center;
+}
