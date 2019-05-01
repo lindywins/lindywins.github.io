@@ -27,29 +27,92 @@ header {
   margin-bottom: 1.6rem;
 }
 
+/* case study header */
 header.case {
   background-color: #ffffff;
   height: 44rem;
-  padding: 0 2rem;
-  margin-bottom: 0;
+  margin-bottom: 8rem;
+}
+
+header.about {
+  background-image: url("/images/bio.png");
+  background-color: #B1C9C9;
+  height: 60.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .logo {
+  display: flex;
   padding-top: 4.1rem;
+  padding-left: 2rem;
+}
+
+img.about {
+  padding-left: 42.1%;
+}
+
+img.kanga {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-content: center;
 }
 
 .hero {
   padding-left: 3.9rem;
-  padding-right: 3.8rem;
+  padding-right: 3.2rem;
 }
 
-.hamburger {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -30px;
-  padding-left: 30.6rem;
-  padding-right: 2rem;
-}
+/* hamburger */
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1.5rem;
+    margin-left: 33.5rem;
+  }
+
+/* hamburger views */
+  .burger-party {
+    display: none;
+  }
+
+  .burger-party:checked ~ .burger-menu {
+    background-color: rgba(239, 239, 239, 0.6);
+    color: #275B6F;
+    cursor: pointer;
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding: 1rem;
+    text-decoration: none;
+    transform: translate(-50%,-50%);
+    height: 14rem;
+    width: 14rem;
+    margin-top: -20rem;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .link:hover {
+    font-weight: bold;
+  }
+
+  .link:visited {
+    color: #00293D;
+  }
 
 /* bolded text */
 span {
@@ -61,8 +124,26 @@ section {
   margin-top: 1.6rem;
 }
 
+/* featured case study */
+section.gray {
+  background-color: #DADADA;
+}
+
+/* 2nd case study */
+section.blue {
+  background-color: #B3CBDB;
+}
+
 section.teal {
   background-color: #DCEBEB;
+}
+
+section.teal2 {
+  background-color: #BBD3D3;
+}
+
+section.teal3 {
+  background-color: #B1C9C9;
 }
 
 section.light-gray {
@@ -81,22 +162,20 @@ section.tan {
   background-color: #DED0C9;
 }
 
+section.tan2 {
+  background-color: #D4C6BF;
+}
+
+section.blue2 {
+  background-color: #CBDBE5;
+}
+
 /* all case studies */
 .projects {
   padding-top: 3rem;
   padding-bottom: 4.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-/* featured case study */
-.gray {
-  background-color: #DADADA;
-}
-
-/* 2nd case study */
-.blue {
-  background-color: #B3CBDB;
 }
 
 /* top and bottom nav */
@@ -130,6 +209,15 @@ h1.case {
   text-align: center;
 }
 
+/* about page intro */
+h1.about {
+  color: #275B6F;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.015rem;
+  padding-left: 3.9rem;
+}
+
 /* hero primary */
 h2 {
   color: #275B6F;
@@ -149,6 +237,23 @@ h2.case {
   line-height: 3rem;
   margin-left: 4rem;
   padding-top: 4rem;
+}
+
+h2.about {
+  color: #4B8C96;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin-left: 4rem;
+  padding-top: 4rem;
+}
+
+h2.special {
+  font-size: 6.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
 }
 
 /* case study subheadings */
@@ -264,14 +369,16 @@ ul {
 
 button {
   background: #275B6F;
+  border-style: none;
   border-radius: 2.6rem;
   color: #f6f6f6;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4rem;
   line-height: 3.1rem;
+  letter-spacing: .06rem;
   margin-left: 4.9rem;
   margin-top: 1.6rem;
-  padding: 0.1rem 2rem;
+  padding: 0.07rem 2.6rem;
   text-align: center;
 }
 

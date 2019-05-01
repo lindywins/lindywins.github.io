@@ -16,26 +16,40 @@
     <title>Troop Case Study</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:bold,bolditalic,italic,regular,light,medium">
   </head>
   <body>
 
-    <!--Top nav-->
-    <nav>
-      <img src="images/logo.png" class="logo" alt="logo">
-      <img src="images/hamburger-black.png" class="hamburger" alt="hamburger">
-      <!-- desktop only <ul>
-        <li>Work</li>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </ul> -->
-    </nav>
+    <header class="case">
+
+      <!--Top nav-->
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+
+      <nav>
+        <!-- hamburger menu-->
+        <input type="checkbox" id="burger-party" class="burger-party">
+          <label for="burger-party" class="hamburger">
+            <img src="images/hamburger-black.png" class="hamburger" alt="menu">
+          </label>
+          <ul class="burger-menu">
+            <li><a href="project.html" class="link">Work</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="resume.pdf" class="link" target="_blank">Resume</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+          </ul>
+        <!-- desktop only <ul>
+          <li>Work</li>
+          <li>About</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul> -->
+      </nav>
 
     <!--hero-->
-    <header class="case">
       <h1 class="case">Troop</h1>
-      <img src="images/kanga-mockup.svg" class="svg" alt="mockup">
-      <button class="centered">View Prototype</button>
+      <img src="images/kanga-mockup.svg" class="svg kanga" alt="mockup">
+      <button class="bott centered">View Prototype</button>
       <!-- desktop only <img src="images/desk-mockup.png" alt="mockups"> -->
     </header>
 
@@ -248,9 +262,9 @@
       <!--Contact-->
       <section class="contact">
         <h3>Want to chat? Say hello:</h3>
-        <img src="images/email.png" class="icon" alt="email">
-        <img src="images/linkedin.png" class="icon" alt="linkedin">
-        <img src="images/github.png" class="icon" alt="github">
+        <a href="mailto:melindawest14@gmail.com"><img src="images/email.png" alt="email icon" class="icon"></a>
+        <a href="https://www.linkedin.com/in/melinda-west/"><img src="images/linkedin.png" alt="linkedin icon" class="icon"></a>
+        <a href="https://github.com/lindywins"><img src="images/github.png" alt="github icon" class="icon"></a>
       </section>
 
       <!--Footer / bottom nav-->

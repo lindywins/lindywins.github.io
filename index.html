@@ -16,6 +16,10 @@
     <title>Melinda West | Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:bold,bolditalic,italic,regular,light,medium">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -23,16 +27,27 @@
       <!--Hero-->
       <header>
         <!--Top nav-->
-        <nav class="topnav">
-          <img src="images/logo-white.png" class="logo" alt="logo">
-          <img src="images/hamburger.png" class="hamburger" alt="menu">
-          <!-- desktop only <ul>
-            <li>Work</li>
-            <li>About</li>
-            <li>Resume</li>
-            <li>Contact</li>
-          </ul> desktop only-->
+        <a href="index.html"><img src="images/logo-white.png" class="logo" alt="logo"></a>
+        <nav>
+          <!-- hamburger menu-->
+          <input type="checkbox" id="burger-party" class="burger-party">
+            <label for="burger-party" class="hamburger">
+              <img src="images/hamburger.png" class="hamburger" alt="menu">
+            </label>
+            <ul class="burger-menu">
+              <li><a href="project.html" class="link">Work</a></li>
+              <li><a href="about.html" class="link">About</a></li>
+              <li><a href="resume.pdf" target="_blank" class="link">Resume</a></li>
+              <li><a href="#contact" class="link">Contact</a></li>
+            </ul>
+            <!-- desktop only <ul>
+              <li>Work</li>
+              <li>About</li>
+              <li>Resume</li>
+              <li>Contact</li>
+            </ul> desktop only-->
         </nav>
+
         <h2 class="hero">Hi! My name is Melinda West.</h2>
           <p class="hero">I’m your friendly neighborhood <span>UX Designer</span> (if your neighborhood is Colorado). My passion is improving people’s lives by streamlining their interactions with technology.</p>
       </header>
@@ -56,11 +71,11 @@
       </section>
 
       <!--Contact-->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h5>Want to chat? Say hello:</h5>
-        <img src="images/email.png" alt="email icon" class="icon">
-        <img src="images/linkedin.png" alt="linkedin icon" class="icon">
-        <img src="images/github.png" alt="github icon" class="icon">
+        <a href="mailto:melindawest14@gmail.com"><img src="images/email.png" alt="email icon" class="icon"></a>
+        <a href="https://www.linkedin.com/in/melinda-west/"><img src="images/linkedin.png" alt="linkedin icon" class="icon"></a>
+        <a href="https://github.com/lindywins"><img src="images/github.png" alt="github icon" class="icon"></a>
       </section>
 
       <!--Footer / bottom nav-->
@@ -77,5 +92,8 @@
       </footer>
 
     </div>
+
+    <!-- my script -->
+    <!-- <script src="scripts/tran.js"></script> -->
   </body>
 </html>
