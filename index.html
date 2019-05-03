@@ -21,39 +21,52 @@
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
+
+  <body class="container">
 
       <!--Hero-->
       <header>
-        <!--Top nav-->
-        <a href="index.html"><img src="images/logo-white.png" class="logo" alt="logo"></a>
-        <nav>
-          <!-- hamburger menu-->
-          <input type="checkbox" id="burger-party" class="burger-party">
-            <label for="burger-party" class="hamburger">
-              <img src="images/hamburger.png" class="hamburger" alt="menu">
-            </label>
-            <ul class="burger-menu">
-              <li><a href="project.html" class="link">Work</a></li>
-              <li><a href="about.html" class="link">About</a></li>
-              <li><a href="resume.pdf" target="_blank" class="link">Resume</a></li>
-              <li><a href="#contact" class="link">Contact</a></li>
-            </ul>
-            <!-- desktop only <ul>
-              <li>Work</li>
-              <li>About</li>
-              <li>Resume</li>
-              <li>Contact</li>
-            </ul> desktop only-->
-        </nav>
+        <section class="left">
+            <!-- logo -->
+            <a href="/index.html"><img src="images/logo-white.png" class="hero logo" alt="logo"></a>
 
-        <h2 class="hero">Hi! My name is Melinda West.</h2>
-          <p class="hero">I’m your friendly neighborhood <span>UX Designer</span> (if your neighborhood is Colorado). My passion is improving people’s lives by streamlining their interactions with technology.</p>
+            <h2 class="hero">Hi! My name is Melinda West.</h2>
+              <p class="hero">I’m your friendly neighborhood <span>UX Designer</span> (if your neighborhood is Colorado). My passion is improving people’s lives by streamlining their interactions with technology.</p>
+        </section>
+        <section class="right">
+            <!-- responsive nav -->
+            <nav>
+              <input type="checkbox" id="nav">
+                <label for="nav">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                <ul class="menu">
+                  <li><a href="project.html" class="link">Work</a></li>
+                  <li><a href="about.html" class="link">About</a></li>
+                  <li><a href="resume.pdf" target="_blank" class="link">Resume</a></li>
+                  <li><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
       </header>
 
+      <!-- desktop right column -->
+      <section class="desktop-only">
+        <nav>
+          <ul class="desktop-only">
+            <li><a href="project.html" class="link">Work</a></li>
+            <li><a href="about.html" class="link">About</a></li>
+            <li><a href="resume.pdf" target="_blank" class="link">Resume</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
       <!--Case Study 1-->
-      <section class="projects gray">
+      <section class="projects gray" id="project1">
         <img src="images/kanga-mockup.svg" class="svg" alt="mockup">
         <h1>Troop</h1>
         <h4>Research • Problem solving • Branding • Design</h4>
@@ -62,7 +75,7 @@
       </section>
 
       <!--Case Study 2-->
-      <section class="projects blue">
+      <section class="projects blue" id="project2">
         <img src="images/empty-mockup.svg" class="svg" alt="mockup">
         <h1>[Solo Project]</h1>
         <h4>Research • Problem solving • Branding • Design</h4>
@@ -81,17 +94,7 @@
       <!--Footer / bottom nav-->
       <footer>
         <h6>Designed & developed by Melinda West</h6>
-        <nav>
-          <!-- desktop only <ul>
-            <li>Work</li>
-            <li>About</li>
-            <li>Resume</li>
-            <li>Contact</li>
-          </ul> desktop only-->
-        </nav>
       </footer>
-
-    </div>
 
     <!-- my script -->
     <!-- <script src="scripts/tran.js"></script> -->
