@@ -64,7 +64,7 @@ img.kanga {
   font-weight: 500;
   margin-left: 1rem;
   text-decoration: none;
-  -webkit-text-stroke: 0.1px #275B6F;
+  /* -webkit-text-stroke: 0.1px black; */
 }
 
 .link:hover {
@@ -550,6 +550,7 @@ footer {
     }
 }  /* codepen - responsive nav */
 
+
 /* index media query */
 @media screen and (min-width: 886px) {
     .container {
@@ -606,13 +607,17 @@ footer {
     .kanga {
       float: right;
       margin-right: 1.5rem;
-      margin-left: 4rem;
+      margin-left: 2rem;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
     }
 
     .empty {
       float: left;
       margin-left: 2.5rem;
       margin-right: 5rem;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
     }
 
     .primary {
@@ -625,7 +630,7 @@ footer {
 
     h1.primary, h1.secondary {
       font-size: 4rem;
-      margin-top: 4rem;
+      margin-top: 6rem;
     }
 
     button.prim {
@@ -633,7 +638,13 @@ footer {
     }
 
     button.sec {
+      /* margin-left: 5.1rem; */
       margin-left: 0;
+      position: relative;
+    }
+
+    .textbox {
+      text-align: left;
     }
 
     .contact {
@@ -657,3 +668,30 @@ footer {
     }
 
 } /* index */
+
+@media (min-width: 886px) and (max-width: 995px) {
+    button.sec {
+      margin-left: 9rem;
+    }
+
+    h1.secondary {
+      display: inline-block;
+    }
+
+    .primary {
+      padding-right: 9rem;
+    }
+
+    .secondary {
+      padding-left: 9rem;
+    }
+
+    .kanga {
+      float: none;
+      margin-bottom: 0;
+    }
+
+    .empty {
+      margin-bottom: 0;
+    }
+}
