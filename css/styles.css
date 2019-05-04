@@ -27,13 +27,14 @@ header.case {
   margin-bottom: 8rem;
 }
 
-header.about {
+section.about {
   background-image: url("/images/bio.png");
   background-color: #B1C9C9;
   height: 60.4rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0;
   position: relative;
 }
 
@@ -76,13 +77,14 @@ img.kanga {
   color: #275B6F;
 }
 
-/* codepen */
+/* codepen - responsive nav */
   nav {
     position: fixed;
     top: 0;
     width: 100%;
   }
 
+  /* word links */
   .menu {
     position: absolute;
     margin-top: 4.5rem;
@@ -92,6 +94,12 @@ img.kanga {
     z-index: 1;
   }
 
+  /* word links on about page */
+  ul.about {
+    margin-left: 31.3rem;
+  }
+
+  /* spacing between word links */
   .menu li {
     display: inline;
     margin-right: 15px;
@@ -169,7 +177,7 @@ img.kanga {
   input[type=checkbox]:checked ~ label span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-/* codepen */
+/* codepen - responsive nav */
 
 
 /* bolded text */
@@ -523,6 +531,10 @@ footer {
   text-align: center;
 }
 
+.left2 {
+  display: none;
+}
+
 /* codepen - responsive nav */
 @media (max-width: 885px) {
     .menu {
@@ -667,8 +679,10 @@ footer {
       grid-area: project2;
     }
 
+
 } /* index */
 
+/* index part 2 */
 @media (min-width: 886px) and (max-width: 995px) {
     button.sec {
       margin-left: 9rem;
@@ -694,4 +708,142 @@ footer {
     .empty {
       margin-bottom: 0;
     }
-}
+
+}   /* index part 2 */
+
+/* about media query */
+@media screen and (min-width: 886px) {
+    .container2 {
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+      grid-gap: 2rem;
+      grid-auto-rows: minmax(30px,auto);
+      grid-template-areas:
+        "left2 right"
+        "childhood right"
+        "childhood after-college"
+        "college after-college"
+        "college now"
+        "next next"
+        "contact contact"
+        "footer footer";
+    }
+
+    /* "A little about me..." */
+    h1.about {
+      line-height: 3.5rem;
+      padding-left: 10rem;
+      padding-right: 4.5rem;
+      padding-top: 11rem;
+      padding-bottom: 0;
+    }
+
+    .childhood {
+      grid-area: childhood;
+      padding-left: 6rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 0;
+    }
+
+    .college {
+      grid-area: college;
+      padding-left: 6rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .after-college {
+      grid-area: after-college;
+      padding-right: 6rem;
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    .now {
+      grid-area: now;
+      padding-right: 6rem;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    .next {
+      grid-column: next;
+      padding-left: 6rem;
+      padding-right: 7rem;
+    }
+
+    /* Next headline */
+    h2.special {
+      float: left;
+      /* margin-top: -0.6rem; */
+    }
+
+    /* next body text */
+    p.next {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    p.about {
+      font-size: 1.5rem;
+      letter-spacing: 0.04rem;
+      line-height: 3rem;
+    }
+
+    .logo-remove {
+      display: none;
+    }
+
+    .logo-add {
+      display: block;
+      padding-left: 10rem;
+    }
+
+    .left2 {
+      background-color: #B1C9C9;
+      display: grid;
+      height: 36rem;
+      padding-bottom: 0;
+      grid-area: left2;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .right {
+      grid-area: right;
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+
+    footer {
+      height: 8.1rem;
+    }
+
+}  /* about media query */
+
+/* about part 2 */
+@media (min-width: 886px) and (max-width: 1050px) {
+    /* word links on about page */
+    ul.about {
+      margin-left: 18rem;
+    }
+
+   section.about {
+     background-position: bottom;
+     height: auto;
+    }
+}  /* about part 2 */
+
+/* about part 3 */
+@media (min-width: 886px) and (max-width: 1103px) {
+  /* Next headline */
+  h2.special {
+    margin-bottom: 6rem;
+    padding-right: 4rem;
+  }
+}  /* about part 3 */
