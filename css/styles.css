@@ -21,7 +21,7 @@ section.left {
 }
 
 /* case study header */
-header.case {
+section.case {
   background-color: #ffffff;
   height: 44rem;
   margin-bottom: 8rem;
@@ -47,6 +47,7 @@ section.about {
 img.about {
   padding-left: 42.1%;
 }
+
 
 img.kanga {
   padding-left: 2rem;
@@ -96,7 +97,9 @@ img.kanga {
 
   /* word links on about page */
   ul.about {
-    margin-left: 31.3rem;
+    /* margin-left: 31.3rem; */
+    margin-left: 24.5%;
+
   }
 
   /* spacing between word links */
@@ -185,6 +188,10 @@ span {
   font-weight: bold;
 }
 
+.image-add {
+  display: none;
+}
+
 /* all sections */
 section {
   margin-top: 1.6rem;
@@ -236,7 +243,7 @@ section.blue2 {
   background-color: #CBDBE5;
 }
 
-/* all case studies */
+/* case studies on homepage */
 .projects {
   padding-top: 3rem;
   padding-bottom: 4.5rem;
@@ -437,6 +444,10 @@ button {
   text-align: center;
 }
 
+button:hover {
+  color: #9AB4C3;
+}
+
 button.case {
   margin-left: 4rem;
 }
@@ -488,10 +499,11 @@ button.bott {
 }
 
 /* ? image */
-.research {
+img.research {
   align-content: center;
   margin-left: 4rem;
   margin-top: 4rem;
+  max-width: 64%;
 }
 
 /* quote graphics */
@@ -532,6 +544,10 @@ footer {
 }
 
 .left2 {
+  display: none;
+}
+
+.show {
   display: none;
 }
 
@@ -594,10 +610,6 @@ footer {
       grid-area: right;
       height: 65rem;
     }
-
-    /* header {
-      margin-bottom: 0;
-    } */
 
     .hero {
       letter-spacing: 0.04em;
@@ -830,9 +842,10 @@ footer {
 @media (min-width: 886px) and (max-width: 1050px) {
     /* word links on about page */
     ul.about {
-      margin-left: 18rem;
+      /* margin-left: 18rem; */
     }
 
+    /* background image on about page */
    section.about {
      background-position: bottom;
      height: auto;
@@ -847,3 +860,174 @@ footer {
     padding-right: 4rem;
   }
 }  /* about part 3 */
+
+/* project media query */
+@media screen and (min-width: 886px) {
+    .project {
+      margin-top: 2rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      padding-bottom: 5rem;
+      width: 100%;
+    }
+
+    h2.case, h3.case, p.case {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    ul.case {
+      margin-left: 2rem;
+    }
+
+    ul.project-menu {
+      /* margin-left: 83.6rem; */
+      margin-left: 65.3%;
+      margin-right: 0;
+      position: absolute;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: flex;
+    }
+
+    .logo2 {
+      display: flex;
+      margin-left: 10rem;
+      padding-top: 4.1rem;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(10px,auto);
+      grid-template-areas:
+        "sum1 sum3 sum4"
+        "sum2 sum3 sum5";
+    }
+
+    .sum1 {
+      grid-area: sum1;
+      padding-top: 9rem;
+    }
+
+    .sum2 {
+      grid-area: sum2;
+      padding-top: 7rem;
+    }
+
+    .sum3 {
+      grid-area: sum3;
+      padding-top: 15rem;
+    }
+
+    p.sum3 {
+      margin-top: 0;
+      padding-top: 9rem;
+    }
+
+    .sum4 {
+      grid-area: sum4;
+      padding-top: 6rem;
+    }
+
+    .sum5 {
+      grid-area: sum5;
+      padding-top: 9rem;
+    }
+
+    section.hero3 {
+      background-color: #F8F9F9;
+      position: relative;
+    }
+
+    .image-add {
+      /* display: flex; */
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10rem;
+      width: 100%;
+    }
+
+    img.research {
+      float: right;
+      max-width: 41%;
+      padding-top: 4rem;
+      padding-left: 0;
+    }
+
+    h3.research, p.research, ul.research {
+      max-width: 46%;
+      display: block;
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .screens {
+      float: left;
+      margin-right: 5rem;
+      margin-top: 4rem;
+      max-width: 60%;
+      grid-area: screens;
+      display: inline-flex;
+    }
+
+    .all-comp {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(10px,auto);
+      grid-template-areas:
+        "one one"
+        "two two"
+        "competitive1 competitive2"
+        "button-comp button-comp";
+      }
+
+    .one {
+      grid-area: one;
+    }
+
+    .two {
+      grid-area: two;
+    }
+
+    .competitive1 {
+      grid-area: competitive1;
+    }
+
+    .competitive2 {
+      grid-area: competitive2;
+      margin-top: -2rem;
+    }
+
+    li.comp {
+      margin-left: 1rem;
+    }
+
+    button.case {
+      margin-left: 0;
+    }
+
+    button.comp {
+      grid-area: button-comp;
+      max-width: 230px;
+      margin-bottom: 0;
+    }
+
+    button.head {
+      margin-top: 0;
+    }
+
+
+
+}  /* project media query */

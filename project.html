@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:bold,bolditalic,italic,regular,light,medium">
 
   </head>
-  <body>
+  <body class="container3">
 
-    <header class="case">
+    <section class="case hero3">
 
       <!-- logo -->
-      <a href="index.html"><img src="images/logo.png" class=" hero logo" alt="logo"></a>
+      <a href="index.html"><img src="images/logo.png" class="hero logo2" alt="logo"></a>
 
       <!-- responsive nav -->
       <nav>
@@ -36,7 +36,7 @@
             <span class="black"></span>
             <span class="black"></span>
           </label>
-          <ul class="menu">
+          <ul class="menu project-menu">
             <li><a href="project.html" class="link dark">Work</a></li>
             <li><a href="about.html" class="link dark">About</a></li>
             <li><a href="resume.pdf" target="_blank" class="link dark">Resume</a></li>
@@ -46,29 +46,30 @@
 
     <!--hero-->
       <h1 class="case">Troop</h1>
-      <img src="images/kanga-mockup.svg" class="svg kanga" alt="mockup">
-      <button class="bott centered">View Prototype</button>
-      <!-- desktop only <img src="images/desk-mockup.png" alt="mockups"> -->
-    </header>
+      <img src="images/kanga-mockup.svg" class="svg kanga hide" alt="mockup">
+      <button class="bott centered head" onclick="window.location.href='https://www.figma.com/proto/XLirpu4hWo86ZI0OpQpKWVTw/Cloud-wireframes%2Fmockups?node-id=156%3A921&viewport=634%2C582%2C0.339387&scaling=min-zoom&redirected=1'">View Prototype</button>
+      <!--desktop only-->
+        <img src="images/desk-mockup.png" class="image-add" alt="mockups">
+    </section>
 
     <!--summary-->
-    <section class="teal">
-      <h2 class="case">Summary</h2>
-        <p class="case">My client was looking for a way to stand out and add their mark to a saturated cloud storage market. Initially, they were unsure of the best way to do this, and enlisted my help with creating an app.</p>
-      <h2 class="case">Role</h2>
-        <p class="case">My role in this project was to research what was missing in the existing cloud storage market, narrow down the focus for the app, and then design visual and functional solutions. I also created the brand identity for my client. </p>
-      <h2 class="case">Problem</h2>
-        <p class="case">I discovered a few key issues that were prevalent with other cloud storage apps:
-          <ul>
+    <section class="teal summary project">
+      <h2 class="case sum1">Summary</h2>
+        <p class="case sum1">My client was looking for a way to stand out and add their mark to a saturated cloud storage market. Initially, they were unsure of the best way to do this, and enlisted my help with creating an app.</p>
+      <h2 class="case sum2">Role</h2>
+        <p class="case sum2">My role in this project was to research what was missing in the existing cloud storage market, narrow down the focus for the app, and then design visual and functional solutions. I also created the brand identity for my client. </p>
+      <h2 class="case sum3">Problem</h2>
+        <p class="case sum3">I discovered a few key issues that were prevalent with other cloud storage apps:
+          <ul class="case sum3">
             <li>It can be easy to run out of space</li>
             <li>Lack of security</li>
             <li>Inconsistencies when transferring files across platforms</li>
             <li>Pressure to upgrade can be annoying to users</li>
           </ul>
-      <h2 class="case">Solution</h2>
-        <p class="case">Troop was created as a fun, inviting alternative with increased security, consistent formatting, and a simple pricing platform with generous storage options.</p>
-      <h2 class="case">Tools Used</h2>
-        <ul class="bottom">
+      <h2 class="case sum4">Solution</h2>
+        <p class="case sum4">Troop was created as a fun, inviting alternative with increased security, consistent formatting, and a simple pricing platform with generous storage options.</p>
+      <h2 class="case sum5">Tools Used</h2>
+        <ul class="bottom case sum5">
           <li>Figma</li>
           <li>InVision</li>
           <li>Google Suite (Forms, Sheets,
@@ -78,19 +79,19 @@
       </section>
 
       <!--research-->
-      <section class="light-gray">
+      <section class="light-gray project">
         <img src="images/research.svg" class="svg research" alt="illustration">
         <h2 class="case">Research</h2>
-        <h3 class="case">I started my research by determining the client's priorities.</h3>
-          <p class="case">The client was interested in the app having the following features:</p>
-            <ul>
+        <h3 class="case research">I started my research by determining the client's priorities.</h3>
+          <p class="case research">The client was interested in the app having the following features:</p>
+            <ul class="case research">
               <li>saving content you find on the web (links, images, videos, etc.)</li>
-              <li>organizing that content using things like categories, tags, groups, or folders</li>
+              <li>organizing that content using things like categories, tags, groups, and/or folders</li>
               <li>creating content (notes, documents, maybe spreadsheets?)</li>
               <li>uploading files (videos, images, PDFs, etc.) from a computer or mobile device</li>
             </ul>
-          <p class="case mini-top">As well as the following collaborative features, which were inspired by their desire for leveraging the "network effect" to generate growth:</p>
-            <ul class="bottom">
+          <p class="case mini-top research">As well as the following collaborative features, which were inspired by their desire for leveraging the "network effect" to generate growth:</p>
+            <ul class="case bottom research">
               <li>sharing a single item with someone else (and vice-versa)</li>
               <li>sharing a folder or group of items with someone else (and vice-versa)</li>
               <li>connecting with other users for real-time collaboration in notes or documents</li>
@@ -98,32 +99,40 @@
       </section>
 
       <!--comp analysis-->
-      <section class="light-blue">
-        <img src="images/evernote.png" class="top center" alt="Evernote">
-        <img src="images/dropbox.png" class="center" alt="Dropbox">
-        <img src="images/drive.png" class="center" alt="Drive">
-          <h2 class="case">Competitive Analysis</h2>
-          <h3 class="case">Next, I analyzed Google Drive, Dropbox, and Evernote to see their strengths and weaknesses, and look for opportunities and threats in the market.</h3>
-            <p class="case bold-italic">Key Positive Features:</p>
-              <ul>
-                <li>Free to start</li>
-                <li>Easy to use</li>
-                <li>Collaboration</li>
-                <li>Version history</li>
+      <section class="light-blue project">
+        <div class="screens">
+          <img src="images/evernote.png" class="top center hide" alt="Evernote">
+          <img src="images/dropbox.png" class="center hide" alt="Dropbox">
+          <img src="images/drive.png" class="center hide" alt="Drive">
+          <img src="images/screen-stack.png" class="show" alt="screenshots">
+        </div>
+        <div class="all-comp">
+          <h2 class="case comp one">Competitive Analysis</h2>
+          <h3 class="case comp two">Next, I analyzed Google Drive, Dropbox, and Evernote to see their strengths and weaknesses, and look for opportunities and threats in the market.</h3>
+            <div class="competitive1">
+              <p class="case comp bold-italic">Key Positive Features:</p>
+              <ul class="case comp">
+                <li class="comp">Free to start</li>
+                <li class="comp">Easy to use</li>
+                <li class="comp">Collaboration</li>
+                <li class="comp">Version history</li>
               </ul>
-            <p class="case bold-italic mini-top">Key Negative Features:</p>
-              <ul>
-                <li>Security concerns</li>
-                <li>Inconsistent formatting</li>
-                <li>Limited free storage</li>
-                <li>Can’t create new folder after
-                  <br>clicking “Move”</li>
+            </div>
+            <div class="competitive2">
+              <p class="case comp bold-italic mini-top">Key Negative Features:</p>
+              <ul class="case comp">
+                <li class="comp">Security concerns</li>
+                <li class="comp">Inconsistent formatting</li>
+                <li class="comp">Limited free storage</li>
+                <li class="comp">Can’t create new folder after clicking “Move”</li>
               </ul>
-          <button class="bott case">Full competitive analysis</button>
+            </div>
+            <button class="bott case comp" onclick="window.location.href='https://drive.google.com/open?id=1chHkyQyjFFw9QNGG_OTNaZfU14xm5tBmQ8n5wu1h3uA'">Full competitive analysis</button>
+          </div>
       </section>
 
       <!--survey-->
-      <section>
+      <section class="project">
         <h2 class="case top">Survey</h2>
         <img src="images/survey1.png" class="center" alt="survey1">
           <h3 class="case mini-top">Based on the client’s interests and my analysis of the competition, a survey was conducted to determine the project’s focus, and whether or not the client’s desired features were important to users as well.</h3>
@@ -135,13 +144,13 @@
             <p class="case mini-top mini-bottom">One participant wrote in a request for “something hosting similar document-creation features as Google Drive, but with more emphasis on user privacy,” which seemed like a good goal for the app. Another wanted an app that was “less complex yet still comprehensive.” And most of all, people wanted something that was low cost with more space, which came up as an opportunity in my competitive analysis as well.</p>
         <div class="box center mini-top bottom-special">
             <p class="case mini-top bold-italic">The top 3 features based on responses were:</p>
-              <ul>
+              <ul class="case">
                 <li>89% - organizing content w/in categories or folders</li>
                 <li>89% - uploading files from a computer or mobile device</li>
                 <li>78% - creating new content (notes, documents, and/or spreadsheets)</li>
               </ul>
             <p class="case mini-top bold-italic">And the top 3 frustrations were:</p>
-              <ul class="bottom">
+              <ul class="case bottom">
                 <li>44% - formatting issues</li>
                 <li>39% - cost</li>
                 <li>39% - lack of version history</li>
@@ -150,12 +159,12 @@
       </section>
 
       <!--personas-->
-      <section class="beige">
+      <section class="beige project">
         <h2 class="case">User Personas</h2>
         <h3 class="case">Based on the data collected, I created User Personas to better empathize with my users and keep their needs in mind. </h3>
           <p class="case mini-bottom">Both were expert-level young professionals: a blogger and a grad student. These “super-users” were both very busy and had high expectations for their apps.</p>
-          <button class="case">Meet Megan</button>
-          <button class="case2">Meet Scott</button>
+          <button class="case" onclick="window.location.href='https://drive.google.com/open?id=17EteG0NlbRBJVuqJJdywy3195vZtLlKs'">Meet Megan</button>
+          <button class="case2" onclick="window.location.href='https://drive.google.com/open?id=1Sx_Ajw5ZTbJMshuFsmpZdOaPofnp_rER'">Meet Scott</button>
         <img src="images/Megan-circle.png" class="center top" alt="Megan">
           <img src="images/quotes.png" class="quotes" alt="quotes">
           <p class="case inline">Staying organized is my highest priority!</p>
@@ -165,46 +174,46 @@
       </section>
 
       <!--User Stories-->
-      <section class="teal">
+      <section class="teal project">
         <img src="images/story1.png" class="top" alt="story1">
         <img src="images/story2.png" alt="story2">
           <h2 class="case">User Stories</h2>
           <h3 class="case">Next I created User Stories to prioritize which tasks would be most important to the users in my target market.</h3>
             <p class="case mini-bottom">The most important tasks were based on the client’s priorities and the survey results.</p>
-          <button class="bott case">View all user stories</button>
+          <button class="bott case" onclick="window.location.href='https://drive.google.com/open?id=1abylwsw35Oeyr3z1ckayMHvSFk7J6jx6pDUcq_7_CCk'">View all user stories</button>
       </section>
 
       <!--user flows-->
-      <section>
+      <section class="project">
         <h2 class="case">User Flows</h2>
         <h3 class="case">To guide my next steps, I mapped out the key user flows of my competitors to get an idea of what worked and what could be improved.</h3>
           <p class="case mini-bottom">Google Drive overall was the best inspiration, but some of their tasks still seemed as though they could be simplified. I created my own flows to be as straightforward as possible. There are no social media decisions to make during onboarding, and the actions within the dashboard stem from a single key word, such as Lock (for security and formatting) and Share (for shareable links).</p>
-          <button class="bott case">View all user flows</button>
+          <button class="bott case" onclick="window.location.href='https://drive.google.com/open?id=1DzUSzE3ot_5ol3mcVOdwgpEbrBveWCd1'">View all user flows</button>
         <img src="images/flow1.png" class="center" alt="flow1">
         <!-- desktop <img src="images/flow2.png" alt="flow2"> -->
         <img src="images/flow3.png" class="center mini-top bottom" alt="flow3">
       </section>
 
       <!--wireframes & testing-->
-      <section class="light-gray">
+      <section class="light-gray project">
         <h2 class="case">Wireframes</h2>
         <h3 class="case">To get feedback as early as possible, I sketched low fidelity wireframes first, then created high fidelity digital versions for my first round of usability testing.</h3>
           <p class="case mini-bottom">My goal was to keep the layout simple, clean, and intuitive for any user. I consolidated the app’s actions into one sidebar so the user would only have to look in one section to find what they were looking for. I also provided only two plan options for simplicity.</p>
-          <button class="case">View all sketches</button>
-          <button class="bott case">View all digital wireframes</button>
+          <button class="case" onclick="window.location.href='https://drive.google.com/open?id=1DrXRt3hYOLB-bzyytwUi_jPE-tSbKNPA'">View all sketches</button>
+          <button class="bott case" onclick="window.location.href='https://drive.google.com/open?id=16Si4CPVmaQXEWTgbL_3zOlGqvRGCenHP'">View all digital wireframes</button>
         <img src="images/wire1.svg" class="stretch" alt="wire1">
         <img src="images/wire2.svg" alt="wire2">
         <img src="images/wire3.svg" alt="wire3">
         <img src="images/wire4.svg" alt="wire4">
           <h2 class="case">Test Results, Round 1</h2>
             <p class="case mini-bottom">The first round of testing on my high fidelity wireframes was less successful than expected- two out of three users had trouble completing all of the assigned tasks. Users pointed out some content issues as well.</p>
-            <button class="case">View script & notes</button>
+            <button class="case" onclick="window.location.href='https://drive.google.com/open?id=1ZJ0vSx229KNQzQCorh84byGEiVZe-_7V'">View script & notes</button>
           <h2 class="case">Changes Made</h2>
             <p class="case bottom">Based on the test results, I modified my designs to include more written instructions on the welcome screens in lieu of arrows, revised some of the content and buttons for clarity, and removed the “Choose Plan” screen for users who already picked a plan when signing up from the bottom of the homepage. I also added a hover screen so new users could see the app’s password requirements when creating an account.</p>
       </section>
 
       <!--branding-->
-      <section>
+      <section class="project">
         <img src="images/brand1.png" class="svg mini-top mini-bottom" alt="brand1">
         <img src="images/brand2.png" class="svg" alt="brand2">
           <h2 class="case">Branding</h2>
@@ -213,25 +222,25 @@
         <img src="images/brand3.svg" class="svg center shrink top" alt="brand3">
         <img src="images/brand4.svg" class="svg center shrink mini-bottom top" alt="brand4">
         <p class="case mini-top mini-bottom">The name Troop references a group of kangaroos, suggesting strength in numbers and also a military level of security. The kangaroo was chosen to embody the warm and cozy feeling of the brand, and for their protective pouches.</p>
-          <button class="case bott">Moodboard</button>
-          <button class="case2">Style Guide</button>
+          <button class="case bott" onclick="window.location.href='https://projects.invisionapp.com/boards/UJ3RUQ638CZ/'">Moodboard</button>
+          <button class="case2" onclick="window.location.href='https://drive.google.com/open?id=1pWuV_DqFbXqPJVQZZkLiy5FJEs2YuAag'">Style Guide</button>
       </section>
 
       <!--mockups & testing-->
-      <section class="teal">
+      <section class="teal project">
         <img src="images/mockup1.png" class="svg" alt="mockup1">
         <img src="images/mockup2.png" class="svg mini-top" alt="mockup2">
         <img src="images/mockup3.png" class="svg mini-top" alt="mockup3">
           <h2 class="case">Mockups</h2>
             <p class="case mini-bottom">Next, I designed polished mockups including the changes from the first round of testing.</p>
-            <button class="case">View prototype</button>
+            <button class="case" onclick="window.location.href='https://www.figma.com/proto/XLirpu4hWo86ZI0OpQpKWVTw/Cloud-wireframes-mockups?node-id=156%3A921&viewport=634%2C582%2C0.339387&scaling=min-zoom'">View prototype</button>
           <h2 class="case">Test Results, Round 2</h2>
             <p class="case mini-bottom">Overall, this round of testing was much more successful. After implementing my changes, all participants were able to complete each task easily, and the feedback I received on the visual design was positive. Each user also mentioned emotions/feelings consistent with the desired brand, including relaxing, friendly, and non-threatening. The content was considered to be clear and understandable by all users.</p>
-            <button class="case bott">View script & notes</button>
+            <button class="case bott" onclick="window.location.href='https://drive.google.com/open?id=1LZg0jG9STl3uTgPTm_L3rBVhSj5l-MAy'">View script & notes</button>
       </section>
 
       <!--pref testing-->
-      <section class="tan">
+      <section class="tan project">
         <img src="images/pouch1.png" class="inline top indent" alt="pouch1">
         <img src="images/arrow.png" class="arrow" alt="arrow">
         <img src="images/pouch2.png" class="inline top" alt="pouch2">
@@ -244,7 +253,7 @@
       </section>
 
       <!--conclusion-->
-      <section class="light-blue">
+      <section class="light-blue project">
         <h2 class="case">Conclusion - What I Learned</h2>
         <h3 class="case">Trust the process</h3>
           <p class="case">While it was challenging starting a project without much direction from the client, I found that trusting the design process and taking the time to think through each step was extremely helpful. With research, the problems started to solve themselves, and when they didn’t, I was able to perform more testing to answer any additional questions that came up.</p>
@@ -257,7 +266,7 @@
       </section>
 
       <!--Contact-->
-      <section class="contact">
+      <section class="contact project" id="contact">
         <h5>Want to chat? Say hello:</h5>
         <a href="mailto:melindawest14@gmail.com"><img src="images/email.png" alt="email icon" class="icon"></a>
         <a href="https://www.linkedin.com/in/melinda-west/"><img src="images/linkedin.png" alt="linkedin icon" class="icon"></a>
@@ -265,7 +274,7 @@
       </section>
 
       <!--Footer / bottom nav-->
-      <footer>
+      <footer class="project">
         <h6>Designed & developed by Melinda West</h6>
       </footer>
 
