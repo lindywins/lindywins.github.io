@@ -52,7 +52,6 @@ img.about {
 img.kanga {
   padding-left: 2rem;
   padding-right: 2rem;
-  align-content: center;
 }
 
 .hero {
@@ -871,13 +870,23 @@ footer {
       width: 100%;
     }
 
+    .case {
+      padding-right: 0;
+    }
+
+    button.case {
+      padding-right: 2.6rem;
+    }
+
     h2.case, h3.case, p.case {
       margin-left: 0;
       padding-left: 0;
+      padding-right: 0;
     }
 
     ul.case {
       margin-left: 2rem;
+      padding-right: 0;
     }
 
     ul.project-menu {
@@ -940,7 +949,7 @@ footer {
       padding-top: 9rem;
     }
 
-    section.hero3 {
+    div.hero3 {
       background-color: #F8F9F9;
       position: relative;
     }
@@ -949,8 +958,14 @@ footer {
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 10rem;
+      margin-bottom: 2rem;
+      margin-top: -14rem;
       width: 100%;
+    }
+
+    .stubborn {
+      position: relative;
+      margin-top: -2rem;
     }
 
     img.research {
@@ -975,7 +990,7 @@ footer {
 
     .screens {
       float: left;
-      margin-right: 5rem;
+      margin-right: 6rem;
       margin-top: 4rem;
       max-width: 60%;
       grid-area: screens;
@@ -1028,6 +1043,52 @@ footer {
       margin-top: 0;
     }
 
+    .all-survey {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-auto-rows: minmax(10px,auto);
+      grid-template-areas:
+        "sur1 sur1 sur2 sur2 sur3 sur3"
+        "blurb1 blurb1 blurb1 blurb4 blurb4 blurb4"
+        "blurb2 blurb2 blurb2 blurb5 blurb4 blurb4"
+        "blurb3 blurb3 blurb3 blurb5 blurb5 blurb5"
+        "box box box box box box";
+    }
 
+    .sur1 {
+      grid-area: sur1;
+    }
+
+    .sur2 {
+      grid-area: sur2;
+    }
+
+    .sur3 {
+      grid-area: sur3;
+    }
+
+    .blurb1 {
+      grid-area: blurb1;
+    }
+
+    .blurb2 {
+      grid-area: blurb2;
+    }
+
+    .blurb3 {
+      grid-area: blurb3;
+    }
+
+    .blurb4 {
+      grid-area: blurb4;
+    }
+
+    .blurb5 {
+      grid-area: blurb5;
+    }
+
+    .box {
+      grid-area: box;
+    }
 
 }  /* project media query */
