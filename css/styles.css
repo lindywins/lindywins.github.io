@@ -192,53 +192,53 @@ span {
 }
 
 /* all sections */
-section {
+.project {
   margin-top: 1.6rem;
 }
 
 /* featured case study */
-section.gray {
+.gray {
   background-color: #DADADA;
 }
 
 /* 2nd case study */
-section.blue {
+.blue {
   background-color: #B3CBDB;
 }
 
-section.teal {
+.teal {
   background-color: #DCEBEB;
 }
 
-section.teal2 {
+.teal2 {
   background-color: #BBD3D3;
 }
 
-section.teal3 {
+.teal3 {
   background-color: #B1C9C9;
 }
 
-section.light-gray {
+.light-gray {
   background-color: #EFEFEF;
 }
 
-section.light-blue {
+.light-blue {
   background-color: #DDECF5;
 }
 
-section.beige {
+.beige {
   background-color: #E8DAD3;
 }
 
-section.tan {
+.tan {
   background-color: #DED0C9;
 }
 
-section.tan2 {
+.tan2 {
   background-color: #D4C6BF;
 }
 
-section.blue2 {
+.blue2 {
   background-color: #CBDBE5;
 }
 
@@ -870,6 +870,13 @@ footer {
       width: 100%;
     }
 
+    /* sections with edge to edge content */
+    .project-fill {
+      margin-top: 2rem;
+      padding-bottom: 5rem;
+      width: 100%;
+    }
+
     .case {
       padding-right: 0;
     }
@@ -882,6 +889,10 @@ footer {
       margin-left: 0;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    p.about {
+      margin-left: 3.9rem;
     }
 
     ul.case {
@@ -908,6 +919,7 @@ footer {
       display: flex;
       margin-left: 10rem;
       padding-top: 4.1rem;
+      padding-bottom: 1rem;
     }
 
     .summary {
@@ -954,12 +966,13 @@ footer {
       position: relative;
     }
 
+    /* desktop device mockup image */
     .image-add {
       display: flex;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2rem;
-      margin-top: -14rem;
+      margin-top: -15rem;
       width: 100%;
     }
 
@@ -1045,34 +1058,58 @@ footer {
 
     .all-survey {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-auto-rows: minmax(10px,auto);
       grid-template-areas:
-        "sur1 sur1 sur2 sur2 sur3 sur3"
-        "blurb1 blurb1 blurb1 blurb4 blurb4 blurb4"
-        "blurb2 blurb2 blurb2 blurb5 blurb4 blurb4"
-        "blurb3 blurb3 blurb3 blurb5 blurb5 blurb5"
-        "box box box box box box";
+        "sur1 sur1 sur1 sur1 sur2 sur2 sur2 sur2 sur3 sur3 sur3 sur3"
+        ". st st st st st . . . . . ."
+        ". blurb1 blurb1 blurb1 blurb1 blurb1 blurb4 blurb4 blurb4 blurb4 blurb4 ."
+        ". blurb2 blurb2 blurb2 blurb2 blurb2 blurb5 blurb5 blurb5 blurb5 blurb5 ."
+        ". blurb3 blurb3 blurb3 blurb3 blurb3 blurb5 blurb5 blurb5 blurb5 blurb5 ."
+        /* ". . . blurb5 blurb5 blurb5" */
+        ". box box box box box box box box box box .";
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .survey-title {
+      grid-area: st;
     }
 
     .sur1 {
       grid-area: sur1;
+      padding-top: 2.3rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+
     }
 
     .sur2 {
       grid-area: sur2;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 1rem;
+      padding-left: 1rem;
+
     }
 
     .sur3 {
       grid-area: sur3;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1rem;
     }
 
     .blurb1 {
       grid-area: blurb1;
+      margin-right: 5rem;
+      /* margin-top: 5rem; */
     }
 
     .blurb2 {
       grid-area: blurb2;
+      margin-top: -10rem;
     }
 
     .blurb3 {
@@ -1087,8 +1124,43 @@ footer {
       grid-area: blurb5;
     }
 
+  /* survey box outline */
     .box {
       grid-area: box;
+      width: 100%;
+      padding-left: 8.8rem;
+      padding-bottom: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 0;
+    }
+
+    /* survey box content boxes */
+    .mini-box {
+      width: 50%;
+      float: left;
+    }
+
+    /* survey box text */
+    .box-text {
+      list-style-type: none;
+    }
+
+    .persona-box {
+      display: inline-block;
+      float: left;
+      width: 40%;
+    }
+
+    .megan {
+      display: inline-block;
+      float: left;
+      width: 30%;
+    }
+
+    .scott {
+      display: inline-block;
+      float: left;
+      width: 30%;
     }
 
 }  /* project media query */
