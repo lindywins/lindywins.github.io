@@ -1147,20 +1147,80 @@ footer {
 
     .persona-box {
       display: inline-block;
-      float: left;
-      width: 40%;
+      width: 42%;
     }
 
     .megan {
       display: inline-block;
-      float: left;
       width: 30%;
+      vertical-align: top;
     }
 
     .scott {
       display: inline-block;
-      float: left;
+      width: 33%;
+      vertical-align: top;
+      margin-right: -5rem;
+      margin-left: -5rem;
+    }
+
+    p.inline {
+      margin-left: 9rem;
+    }
+
+    .quotes {
+      margin-top: 2rem;
+    }
+
+    .persona-box, .megan, .scott {
+      /* margin-bottom: 0; */
+    }
+
+    /* user story images */
+    .stories {
+      display: inline-block;
+      width: 69%;
+      margin-right: -10rem;
+    }
+
+    /* user story text */
+    .story-box {
+      display: inline-block;
+      width: 40%;
+      margin-right: -10rem;
+      padding-top: 2rem;
+    }
+
+    /* User flow text box */
+    .flow-text {
+      display: inline-block;
+      width: 21%;
+      margin-left: 10rem;
+      margin-right: 1rem;
+    }
+
+    .flow1 {
+      display: inline-block;
+      padding-left: 1rem;
       width: 30%;
+    }
+
+    .flow3 {
+      display: inline-block;
+      width: 28%;
+    }
+
+    .pref1 {
+      display: inline-block;
+      padding-right: 1rem;
+      width: 50%;
+    }
+
+    .pref2 {
+      display: inline-block;
+      padding-left: 1rem;
+      margin-right: -10rem;
+      width: 50%;
     }
 
 }  /* project media query */
