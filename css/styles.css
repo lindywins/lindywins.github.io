@@ -545,8 +545,8 @@ ul {
 .brand5 {
   grid-area: brand5;
   align-self: start;
-  max-width: 86%;
-  max-height: 86%;
+  max-width: 84%;
+  max-height: 84%;
   padding-top: 4rem;
   padding-bottom: 2rem;
   padding-right: 2rem;
@@ -564,8 +564,8 @@ p .b3, .b7, .b8 {
   display: inline-block;
   vertical-align: top;
   max-width: 33%;
+  padding-top: 2rem;
 }
-
 
 button {
   background: #275B6F;
@@ -1726,10 +1726,12 @@ footer {
 
     /* avenir sample text */
     .brand5 {
+      max-width: 84%;
+      max-height: 84%;
       padding-top: 0;
       padding-bottom: 0;
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
     }
 
     .b0 {
@@ -1753,7 +1755,7 @@ footer {
     .b5 {
       grid-area: b5;
       max-height: 3.2rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     /* style guide button */
@@ -1761,7 +1763,7 @@ footer {
       grid-area: b6;
       max-width: 14rem;
       max-height: 3.2rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .b7 {
@@ -1771,14 +1773,14 @@ footer {
 
     .b8 {
       grid-area: b8;
-      padding-top: 1rem;
+      padding-top: 2rem;
     }
 
     /* top mockup row */
     .row1 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      margin: 2rem auto;
+      margin: 0 auto;
       position: relative;
       max-width: 94%;
     }
