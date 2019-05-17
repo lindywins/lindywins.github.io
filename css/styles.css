@@ -212,6 +212,12 @@ span {
 /* all sections */
 .project {
   margin-top: 1.6rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+footer.project {
+  padding-top: 3.25rem;
 }
 
 /* featured case study */
@@ -314,7 +320,7 @@ h2.case {
   color: #4B8C96;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 3rem;
   margin-left: 4rem;
   padding-top: 4rem;
@@ -345,10 +351,6 @@ h3 {
   line-height: 3rem;
   padding-left: 4.9rem;
   padding-right: 4.8rem;
-}
-
-h3.primary, h3.secondary {
-  max-width: 55%;
 }
 
 /* case study subheadings */
@@ -461,7 +463,7 @@ ul {
 /* survey box text */
 .box-text {
   list-style-type: none;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .sur1 {
@@ -490,27 +492,75 @@ ul {
   max-width: 100%;
 }
 
-.small-story {
+/* .small-story {
   width: 100%;
 }
 
 .big-story {
   display: none;
+} */
+
+/* as a new user */
+.story1 {
+  background-color: #EFEFEF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  padding-top: 4rem;
+  padding-right: 0;
 }
 
-.mach1 {
-  display: inline-block;
+/* as a returning user */
+.story2 {
+  background-color: #dadada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  padding-top: 4rem;
+  padding-right: 0;
+}
+
+/* User flow text box */
+
+.flow1, .flow3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 6rem;
+  max-width: 100%;
   vertical-align: top;
-  max-width: 33%;
 }
 
-.mach1-1 {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 33%;
+/* troop logo */
+.brand4 {
+  grid-area: brand4;
+  padding-bottom: 0;
+  padding-top: 5rem;
 }
 
-.mach1-2 {
+/* avenir sample text */
+.brand5 {
+  grid-area: brand5;
+  align-self: start;
+  max-width: 86%;
+  max-height: 86%;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* branding text */
+p .b3, .b7, .b8 {
+  padding-top: 2rem;
+}
+
+/* mockups */
+
+.mach1, .mach1-1, .mach1-2 {
   display: inline-block;
   vertical-align: top;
   max-width: 33%;
@@ -599,6 +649,7 @@ img.research {
   align-content: center;
   margin-left: 4rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   max-width: 64%;
 }
 
@@ -606,6 +657,34 @@ img.research {
 .quotes {
   display: inline-block;
   margin-left: 6rem;
+}
+
+/* wireframe images */
+.wire1 {
+  grid-area: wire1;
+  max-width: 100%;
+  object-fit: fill;
+  padding-bottom: 1rem;
+}
+
+.wire2 {
+  grid-area: wire2;
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  padding-bottom: 1rem;
+}
+
+.wire3 {
+  grid-area: wire3;
+  height: 100%;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+.wire4 {
+  grid-area: wire4;
+  max-width: 100%;
 }
 
 p.inline {
@@ -744,7 +823,7 @@ footer {
     }
 
     p.hero {
-      padding-right: 15.5rem;
+      padding-right: 13.9rem;
     }
 
     /* index- troop mockup */
@@ -776,6 +855,10 @@ footer {
     h1.primary, h1.secondary {
       font-size: 4rem;
       margin-top: 6rem;
+    }
+
+    h3.primary, h3.secondary {
+      max-width: 55%;
     }
 
     button.prim {
@@ -891,7 +974,7 @@ footer {
 
     /* word links on desktop */
     ul.about {
-      margin-left: 24.5%;
+      margin-left: 24.1%;
     }
 
     .logo-about {
@@ -935,6 +1018,7 @@ footer {
       grid-column: next;
       padding-left: 4rem;
       padding-right: 4rem;
+      padding-top: 1rem;
     }
 
     .sketch1 {
@@ -1046,6 +1130,7 @@ footer {
     .project-fill {
       margin-top: 2rem;
       padding-bottom: 5rem;
+      padding-top: 3rem;
       width: 100%;
     }
 
@@ -1094,6 +1179,11 @@ footer {
       padding-bottom: 1rem;
     }
 
+    a.link.current {
+      color: #848383;
+      font-weight: 800;
+    }
+
     .summary {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -1101,7 +1191,7 @@ footer {
       grid-template-areas:
         "sum1 sum3 sum4"
         "sum1 sum6 sum4"
-        "sum2 sum7 sum5";
+        "sum2 sum6 sum5";
     }
 
     .sum1 {
@@ -1126,12 +1216,19 @@ footer {
 
     .sum4 {
       grid-area: sum4;
-      padding-top: 6rem;
+    }
+
+    p.sum4 {
+      margin-right: 2rem;
     }
 
     .sum5 {
       grid-area: sum5;
       padding-top: 9rem;
+    }
+
+    li.sum5 {
+      margin-right: 0;
     }
 
     .sum6 {
@@ -1154,7 +1251,7 @@ footer {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2rem;
-      margin-top: -15rem;
+      margin-top: -4rem;
       width: 100%;
     }
 
@@ -1203,12 +1300,17 @@ footer {
     }
 
     .screens {
+      display: inline-flex;
       float: left;
+      grid-area: screens;
       margin-right: 6rem;
       margin-top: 4rem;
       max-width: 60%;
-      grid-area: screens;
-      display: inline-flex;
+    }
+
+    /* extra padding for comp analysis */
+    div.extra {
+      padding-bottom: 12rem;
     }
 
     .all-comp {
@@ -1237,10 +1339,18 @@ footer {
     .competitive2 {
       grid-area: competitive2;
       margin-top: -2rem;
+      padding-right: 0;
+    }
+
+    .screen-stack {
+      max-width: 100%;
+      max-height: 45rem;
+      object-fit: fill;
     }
 
     li.comp {
       margin-left: 1rem;
+      margin-right: -1rem;
     }
 
     button.case {
@@ -1249,7 +1359,7 @@ footer {
 
     button.comp {
       grid-area: button-comp;
-      max-width: 230px;
+      max-width: 24rem;
       margin-bottom: 0;
     }
 
@@ -1261,7 +1371,7 @@ footer {
     .all-survey {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: minmax(10px,auto);
+      grid-auto-rows: minmax(1px,auto);
       grid-template-areas:
         "sur1 sur1 sur1 sur1 sur2 sur2 sur2 sur2 sur3 sur3 sur3 sur3"
         ". st st st st st . . . . . ."
@@ -1270,7 +1380,6 @@ footer {
         ". blurb2 blurb2 blurb2 blurb2 blurb2 blurb5 blurb5 blurb5 blurb5 blurb5 ."
         ". blurb3 blurb3 blurb3 blurb3 blurb3 blurb5 blurb5 blurb5 blurb5 blurb5 ."
         ". blurb3 blurb3 blurb3 blurb3 blurb3 blurb5 blurb5 blurb5 blurb5 blurb5 ."
-        /* ". . . blurb5 blurb5 blurb5" */
         ". box box box box box box box box box box .";
         padding-left: 0;
         padding-right: 0;
@@ -1320,7 +1429,7 @@ footer {
     p.blurb2 {
       padding: 0;
       margin-right: 6rem;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
 
     .blurb3 {
@@ -1329,7 +1438,7 @@ footer {
 
     p.blurb3 {
       padding: 0;
-      margin-top: -1rem;
+      margin-top: -1.5rem;
     }
 
     .blurb4 {
@@ -1365,6 +1474,10 @@ footer {
       width: 42%;
     }
 
+    .persona-text {
+      margin-top: 2rem;
+    }
+
     .megan {
       display: inline-block;
       width: 30%;
@@ -1387,47 +1500,41 @@ footer {
       margin-top: 2rem;
     }
 
-    /* user story images */
+    /* user stories section */
     .stories {
-      display: inline-block;
-      vertical-align: top;
+      display: grid;
+      grid-template-columns: 3fr 3fr 5fr;
     }
 
+    /* as a new user */
     .story1 {
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 9rem;
+      margin-right: 2rem;
       margin-left: 0;
-      margin-right: 0;
-      max-width: 55%;
+      padding-left: 3.5rem;
     }
 
+    /* as a returning user */
     .story2 {
-      display: inline-block;
-      margin-left: 0;
+      margin-left: 2rem;
       margin-right: 0;
-      max-width: 55%;
+      padding-left: 3.5rem;
+      padding-top: 4rem;
+      padding-right: 0;
     }
 
     /* user story text */
     .story-box {
-      display: inline-block;
-      margin-right: -10rem;
-      margin-left: 0;
-      margin-top: -15rem;
-      padding-right: 0;
-      padding-left: 5rem;
-      max-width: 45%;
-      vertical-align: top;
+      margin-left: 5rem;
+      padding-top: 5rem;
     }
 
-    .small-story {
+    /* .small-story {
       display: none;
     }
 
     .big-story {
       display: inline-block;
-    }
+    } */
 
     /* User flow text box */
     .flow-text {
@@ -1472,23 +1579,29 @@ footer {
     .wire1 {
       grid-area: wire1;
       max-width: 100%;
+      padding-left: 1rem;
     }
 
     .wire2 {
       grid-area: wire2;
       height: 100%;
       max-width: 100%;
+      padding-left: 1rem;
     }
 
     .wire3 {
       grid-area: wire3;
       height: 100%;
       max-width: 100%;
+      padding-left: 1rem;
     }
 
     .wire4 {
       grid-area: wire4;
+      height: 95%;
       max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     .w0 {
@@ -1577,10 +1690,12 @@ footer {
         "brand1 brand1 brand1 brand1 brand1 brand1 brand2 brand2 brand2 brand2 brand2 brand2"
         ". b0 b0 b0 b0 b0 brand2 brand2 brand2 brand2 brand2 brand2"
         ". b1 b1 b1 b1 b1 brand2 brand2 brand2 brand2 brand2 brand2"
+        /* ". b3 b3 b3 b3 b3 brand3 brand3 brand3 brand3 brand3 brand3" */
         ". b3 b3 b3 b3 b3 brand3 brand3 brand3 brand3 brand3 brand3"
-        ". b3 b3 b3 b3 b3 brand3 brand3 brand3 brand3 brand3 brand3"
+        ". b7 b7 b7 b7 b7 brand4 brand4 brand4 brand4 brand4 brand4"
         ". b4 b4 b4 b4 b4 brand4 brand4 brand4 brand4 brand4 brand4"
-        ". b5 b6 b6 . . brand4 brand4 brand4 brand4 brand4 brand4";
+        ". b8 b8 b8 b8 b8 brand5 brand5 brand5 brand5 brand5 brand5"
+        ". b5 b6 b6 . . brand5 brand5 brand5 brand5 brand5 brand5";
         padding-left: 0;
         padding-right: 0;
     }
@@ -1588,6 +1703,7 @@ footer {
     .brand1 {
       grid-area: brand1;
       margin-left: 3rem;
+      padding-right: 1rem;
     }
 
     .brand2 {
@@ -1604,7 +1720,16 @@ footer {
 
     .brand4 {
       grid-area: brand4;
-      margin-top: -5rem;
+      padding-bottom: 0;
+      padding-top: 5rem;
+    }
+
+    /* avenir sample text */
+    .brand5 {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
 
     .b0 {
@@ -1621,13 +1746,14 @@ footer {
 
     .b4 {
       grid-area: b4;
+      padding-bottom: 0;
     }
 
     /* moodboard button */
     .b5 {
       grid-area: b5;
       max-height: 3.2rem;
-
+      margin-top: 2rem;
     }
 
     /* style guide button */
@@ -1635,49 +1761,64 @@ footer {
       grid-area: b6;
       max-width: 14rem;
       max-height: 3.2rem;
+      margin-top: 2rem;
+    }
+
+    .b7 {
+      grid-area: b7;
+      padding-top: 2rem;
+    }
+
+    .b8 {
+      grid-area: b8;
+      padding-top: 1rem;
+    }
+
+    /* top mockup row */
+    .row1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 2rem auto;
+      position: relative;
+      max-width: 94%;
     }
 
     .mach1 {
-      display: inline-block;
-      padding-left: 0.5%;
-      vertical-align: top;
-      width: 33%;
+      padding-left: 2rem;
     }
 
     .mach1-1 {
-      display: inline-block;
-      vertical-align: top;
-      width: 33%;
+      padding-left: 2rem;
     }
 
     .mach1-2 {
-      display: inline-block;
-      vertical-align: top;
-      width: 33%;
+      padding-left: 2rem;
+      padding-right: 1rem;
     }
 
+    /* smaller mockups */
     .mach2 {
-      display: inline-block;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
       padding-top: 2.3rem;
-      width: 48%;
+      margin-left: 10rem;
+      margin-bottom: 2rem;
     }
 
+    .m2 {
+      grid-row: 2 / 5;
+    }
+
+    /* mockup section content */
     .mach3 {
-      display: inline-block;
-      margin-left: 2rem;
+      margin-left: 6rem;
+      margin-right: 10rem;
       padding-top: 3rem;
-      vertical-align: top;
-      width: 48%;
+      grid-row: span 5;
     }
 
     button.mock {
       margin-left: 3rem;
-    }
-
-    .row1 {
-      display: block;
-      margin: 0 auto;
-      position: relative;
     }
 
     .pref1 {
